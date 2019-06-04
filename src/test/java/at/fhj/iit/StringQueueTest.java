@@ -1,6 +1,9 @@
 package at.fhj.iit;
 
 import org.junit.*;
+import org.junit.rules.ExpectedException;
+import java.util.NoSuchElementException;
+
 import static org.junit.Assert.*;
 
 public class StringQueueTest {
@@ -27,6 +30,30 @@ public class StringQueueTest {
     public void testOffer2(){
         assertFalse(queueTwo.offer("blaaaaa"));
     }
+
+    @Test
+    public void testPoll(){
+        queueOne.offer("test");
+        queueOne.offer("test2");
+        queueOne.offer("test3");
+        assertEquals("test",queueOne.poll());
+
+    }
+
+    @Test
+    public void testRemove(){
+        queueOne.offer("test");
+        queueOne.offer("test2");
+        queueOne.offer("test3");
+        assertEquals("test",queueOne.poll());
+    }
+
+    @Test (expected = NoSuchElementException.class)
+    public void testRemove2(){
+        queueOne.remove();
+    }
+
+
 
 
 
