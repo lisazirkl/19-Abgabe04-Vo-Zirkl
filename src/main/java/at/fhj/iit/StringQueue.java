@@ -28,6 +28,13 @@ public class StringQueue implements Queue {
 	}
 
 	/**
+	 * default constructor
+	 */
+	public StringQueue(){
+
+	}
+
+	/**
 	 * add a new String to Arraylist
 	 * @param obj new String
 	 * @return true if there is space in Arraylist elements<maxSize
