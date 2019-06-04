@@ -120,4 +120,13 @@ public class StringQueue implements Queue {
 		return element;
 	}
 
+	public static void main(String[] args) {
+
+		StringQueue test = new StringQueue(4);
+
+		test.offer("Hallo");
+
+
+	}
+
 }
