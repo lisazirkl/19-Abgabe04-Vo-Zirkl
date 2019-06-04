@@ -9,7 +9,7 @@
 - Es befinden sich gesamt 3 Fehler im Source Code.
 - Bei Bedarf Optimieren Sie das Queue Beispiel.
 - Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
-- [ ] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
+- [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
 - Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 - [ ] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
 - Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere

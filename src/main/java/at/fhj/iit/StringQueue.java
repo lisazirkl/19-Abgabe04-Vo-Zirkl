@@ -8,6 +8,9 @@ import java.util.NoSuchElementException;
 // there are different Bugs, wrong implementation, typos, ...
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
+/**
+ * The StringQueue class creates an ArrayList of Strings which represents a Queue.
+ */
 public class StringQueue implements Queue {
 	
 	private List<String> elements = new ArrayList<String>();
@@ -49,7 +52,7 @@ public class StringQueue implements Queue {
 	/**
 	 * String is empty if was always true
 	 * removed the empty String
-	 * @return first element in array
+	 * @return first element in ArrayList
 	 */
 	@Override
 	public String remove() {
@@ -60,6 +63,10 @@ public class StringQueue implements Queue {
 		return element;
 	}
 
+    /**
+     * checks if elements is > 0
+     * @return first element from ArrayList
+     */
 	@Override
 	public String peek() {
 		String element;
@@ -71,6 +78,10 @@ public class StringQueue implements Queue {
 		return element;
 	}
 
+    /**
+     * throws an exception if ArrayList is empty
+     * @return first element from ArrayList
+     */
 	@Override
 	public String element() {
 		String element = peek();
