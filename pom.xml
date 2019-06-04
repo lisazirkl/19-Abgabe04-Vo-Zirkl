@@ -23,8 +23,23 @@
 		  <properties>
 			<picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
 		  </properties>
-		</developer>     
-	</developers>
+		</developer>
+        <developer>
+            <id>lisazirkl</id>
+            <name>Zirkl Lisa</name>
+            <email>lisa.zirkl@edu.campus02.at</email>
+            <url>https://github.com/lisazirkl</url>
+            <organization>FH Campus 02</organization>
+            <organizationUrl>https://www.campus02.at</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+            <properties>
+                <picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
+            </properties>
+        </developer>
+    </developers>
 	
     <build>
         <plugins>
