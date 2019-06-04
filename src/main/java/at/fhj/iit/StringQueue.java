@@ -10,6 +10,8 @@ import java.util.NoSuchElementException;
 
 /**
  * The StringQueue class creates an ArrayList of Strings which represents a Queue.
+ * @author Cong Thanh Nhan Vo
+ * @author Lisa Zirkl
  */
 public class StringQueue implements Queue {
 	
@@ -18,12 +20,18 @@ public class StringQueue implements Queue {
 
 	/**
 	 * this. was missing and maxsize spelled wrong
+	 * maximum of 5 Strings could be stored in this Arraylist
 	 * @param maxSize
 	 */
 	public StringQueue(int maxSize){
 		this.maxSize = maxSize;
 	}
-	
+
+	/**
+	 * add a new String to Arraylist
+	 * @param obj new String
+	 * @return true if there is space in Arraylist elements<maxSize
+	 */
 	@Override
 	public boolean offer(String obj) {
 		if(elements.size()!= maxSize)

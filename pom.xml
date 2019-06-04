@@ -10,14 +10,14 @@
 
 	<developers>
 		<developer>
-		  <id>michaelulm</id>
-		  <name>Michael Ulm</name>
-		  <email>michael.ulm@fh-joanneum.at</email>
-		  <url>https://www.michael-ulm.at</url>
-		  <organization>FH JOANNEUM GmbH</organization>
-		  <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+		  <id>volondio</id>
+		  <name>Cong Thanh Nhan Vo</name>
+		  <email>cong.vo@edu.campus02.at</email>
+		  <url>https://github.com/volondio</url>
+		  <organization>Campus 02</organization>
+		  <organizationUrl>https://www.campus02.at</organizationUrl>
 		  <roles>
-			<role>Lecturer</role>
+			<role>Student</role>
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
 		  <properties>
