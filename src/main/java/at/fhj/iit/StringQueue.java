@@ -49,10 +49,10 @@ public class StringQueue implements Queue {
 		logger.info("added");
 		if(elements.size()!= maxSize)
 			elements.add(obj);
-		else
+		else {
 			logger.info("no space");
 			return false;
-		
+		}
 		return true;
 	}
 
