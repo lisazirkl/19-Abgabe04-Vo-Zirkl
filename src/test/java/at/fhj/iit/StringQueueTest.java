@@ -53,6 +53,16 @@ public class StringQueueTest {
         queueOne.remove();
     }
 
+    @Test
+    public void testPeek()
+    {
+        queueOne.offer("test");
+        queueOne.offer("test2");
+        assertEquals("test", queueOne.peek());
+        queueOne.remove();
+        assertEquals("test2", queueOne.peek());
+    }
+
 
 
 
