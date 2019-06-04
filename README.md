@@ -25,10 +25,10 @@
     - [x] Integration Logging Bibliothek log4j mittels Maven Dependencies.
     - [x] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
     - [x] Siehe aktualisiertes Stack Beispiel.
-    - [ ] Erstellen Sie einen Statischen Logger der auf die Konsole schreibt.
-    - [ ] Konfigurieren Sie Logger über ein properties File.
-    - [ ] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
-    - [ ] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
+    - [x] Erstellen Sie einen Statischen Logger der auf die Konsole schreibt.
+    - [x] Konfigurieren Sie Logger über ein properties File.
+    - [x] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
+    - [x] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
     - [ ] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
 - [ ] Maven Site Dokumentation erstellen
     - [ ] Inklusive Javadoc Code und Javadoc Test Klassen
@@ -62,5 +62,7 @@
     Um gut zu testen wurde ein setUp erstellt. Dannach wurden insgesamt 8 Testmethoden geschrieben um eine line coverage von 100% zu erreichen.
     Alle Methoden wurden mit JavaDoc Kommentare versehen um die Dokumentation durchführen zu können. Bild fehlt!!!!!!!!
 
+5. #### POM.XML
+    Um einen Log auszugeben wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen wurde eine Main erstellt und diverse Methoden aufgerufen. Bild fehlt!!!!!!!!
 
 

@@ -114,9 +114,10 @@ public class StringQueue implements Queue {
 	public String element() {
 		logger.info("element");
 		String element = peek();
-		if(element == null)
+		if(element == null) {
+			logger.info("no element");
 			throw new NoSuchElementException("there's no element any more");
-		
+		}
 		return element;
 	}
 
@@ -125,6 +126,14 @@ public class StringQueue implements Queue {
 		StringQueue test = new StringQueue(4);
 
 		test.offer("Hallo");
+		test.offer("ich");
+		test.offer("teste");
+		test.remove();
+		test.peek();
+		test.element();
+		test.remove();
+		test.remove();
+		test.element();
 
 
 	}
