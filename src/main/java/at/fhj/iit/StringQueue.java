@@ -3,6 +3,9 @@ package at.fhj.iit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 
 // there's some Bugs included, try to debug the code and fix the Bugs
 // there are different Bugs, wrong implementation, typos, ...
@@ -14,6 +17,8 @@ import java.util.NoSuchElementException;
  * @author Lisa Zirkl
  */
 public class StringQueue implements Queue {
+
+	private static final Logger logger = LogManager.getLogger(StringQueue.class);
 	
 	private List<String> elements = new ArrayList<String>();
 	private int maxSize = 5;
@@ -41,9 +46,11 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public boolean offer(String obj) {
+		logger.info("added");
 		if(elements.size()!= maxSize)
 			elements.add(obj);
 		else
+			logger.info("no space");
 			return false;
 		
 		return true;
@@ -55,6 +62,7 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String poll() {
+		logger.info("poll");
 		String element = peek();
 		
 		if(elements.size() > 0){
@@ -71,9 +79,13 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String remove() {
+		logger.info("removed");
 		String element = poll();
-		if(element == null)
+		if(element == null) {
+			logger.info("no element anymore");
 			throw new NoSuchElementException("there's no element any more");
+
+		}
 		
 		return element;
 	}
@@ -84,6 +96,7 @@ public class StringQueue implements Queue {
      */
 	@Override
 	public String peek() {
+		logger.info("peek");
 		String element;
 		if(elements.size() > 0)
 			element = elements.get(0);
@@ -99,6 +112,7 @@ public class StringQueue implements Queue {
      */
 	@Override
 	public String element() {
+		logger.info("element");
 		String element = peek();
 		if(element == null)
 			throw new NoSuchElementException("there's no element any more");
