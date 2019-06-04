@@ -5,7 +5,7 @@
 - [ ] Taskergebnisse Schritt für Schritt auf Git stellen
 - Führung Taskliste
 - Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
-- [ ] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
+- [x] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
 - Es befinden sich gesamt 3 Fehler im Source Code.
 - Bei Bedarf Optimieren Sie das Queue Beispiel.
 - Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
