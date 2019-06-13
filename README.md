@@ -63,6 +63,6 @@
     Alle Methoden wurden mit JavaDoc Kommentare versehen um die Dokumentation durchführen zu können. Bild fehlt!!!!!!!!
 
 5. #### POM.XML
-    Um einen Log auszugeben wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen wurde eine Main erstellt und diverse Methoden aufgerufen. Bild fehlt!!!!!!!!
+    Um einen Log auszugeben wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen wurde eine Main erstellt und diverse Methoden aufgerufen. ![Screenshot from logged methods](media/log.png)
 
 
