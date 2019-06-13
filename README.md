@@ -29,7 +29,7 @@
     - [x] Konfigurieren Sie Logger über ein properties File.
     - [x] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
     - [x] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
-    - [ ] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
+    - [x] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
 - [ ] Maven Site Dokumentation erstellen
     - [ ] Inklusive Javadoc Code und Javadoc Test Klassen
     - [ ] Inklusive Menü mit Verweis auf manuell erstellte Seite
@@ -65,4 +65,6 @@
 5. #### POM.XML
     Um einen Log auszugeben wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen wurde eine Main erstellt und diverse Methoden aufgerufen. ![Screenshot from logged methods](media/log.png)
 
+5. #### Maven Site
+    Damit man Maven Sites erstellen kann, wird der site-Ordner im src-Ordner angelegt. Darin wurde das site.xml erstellt.
 
