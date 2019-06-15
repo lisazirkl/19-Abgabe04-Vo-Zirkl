@@ -59,35 +59,35 @@
     Es wurden 3 Fehler in der Klasse StringQueue.java gefunden. 
     
     1. Fehler: Schreibfehler in "MaxSize" und die Zuweisung mit "this." fehlte.
-    ![Screenshot from first error](media/err_1.jpg) 
+    ![Screenshot from first error](media/err_1.png) 
     
     2. Fehler: Wenn elements.size() == 0 ist, soll ein Element gelöscht werden, doch wenn size() 0 ist, dann ist elements leer => elements.size() > 0.
-    ![Screenshot from second error](media/err_2.jpg) 
+    ![Screenshot from second error](media/err_2.png) 
     
     3. Fehler: element wird ein leerer String zugewiesen => element = poll().
-    ![Screenshot from third error](media/err_3.jpg)
+    ![Screenshot from third error](media/err_3.png)
 
 4. #### Testing
     Um gut zu testen wurde ein setUp erstellt. Dannach wurden insgesamt acht Testmethoden geschrieben um eine line coverage von 100% zu erreichen.
     Alle Methoden wurden mit JavaDoc Kommentare versehen um die Dokumentation durchführen zu können. 
     
     StringQueueTest.java run with Coverage:
-    ![Screenshot from testing methods](media/test_1.jpg)
+    ![Screenshot from testing methods](media/test_1.png)
     
     JavaDoc Kommentare:
-    ![Screenshot from JavaDoc1](media/doc_screen7.jpg)
+    ![Screenshot from JavaDoc1](media/doc_screen7.png)
      
-    ![Screenshot from JavaDoc2](media/doc_screen1.jpg)
+    ![Screenshot from JavaDoc2](media/doc_screen1.png)
      
-    ![Screenshot from JavaDoc3](media/doc_screen2.jpg) 
+    ![Screenshot from JavaDoc3](media/doc_screen2.png) 
     
-    ![Screenshot from JavaDoc4](media/doc_screen3.jpg)
+    ![Screenshot from JavaDoc4](media/doc_screen3.png)
      
-    ![Screenshot from JavaDoc5](media/doc_screen4.jpg) 
+    ![Screenshot from JavaDoc5](media/doc_screen4.png) 
     
-    ![Screenshot from JavaDoc6](media/doc_screen5.jpg) 
+    ![Screenshot from JavaDoc6](media/doc_screen5.png) 
     
-    ![Screenshot from JavaDoc7](media/doc_screen6.jpg)
+    ![Screenshot from JavaDoc7](media/doc_screen6.png)
 
 5. #### POM.XML
     Um einen Log auszugeben, wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen, wurde eine Main Methode erstellt und diverse Methoden aufgerufen. 
