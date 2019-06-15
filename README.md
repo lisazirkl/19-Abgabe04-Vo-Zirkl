@@ -5,21 +5,21 @@
 
 - [x] Übertragen Angabe Taskliste in Markdown Readme
 - [x] Einspielen Queue Vorlage aus Repository: https://github.com/michaelulm/software-configuration-management/tree/master/test-automation/Queue
-- [ ] Taskergebnisse Schritt für Schritt auf Git stellen
-    - [ ] Führung Taskliste
-    - [ ] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
+- [x] Taskergebnisse Schritt für Schritt auf Git stellen
+    - [x] Führung Taskliste
+    - [x] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
 - [x] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
     - [x] Es befinden sich gesamt 3 Fehler im Source Code.
     - [x] Bei Bedarf Optimieren Sie das Queue Beispiel.
     - [x] Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
 - [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
-    - [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
+    - [x] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 - [x] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
     - [x] Sie werden die „selben“ Testfälle mehrfach erstellen müssen   um „mehrere
     Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie
     dabei mit unterschiedlichen Daten zu testen.
     - [x] JavaDoc Kommentare erstellen.
-    - [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
+    - [x] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 - [x] Passen Sie Ihr pom.xml auf das Projekt an, damit Sie das Projekt erstellen aber auch Dokumentation generieren können.
     - [x] EntwicklerInnen Informationen hinzufügen.
     - [x] Integration Logging Bibliothek log4j mittels Maven Dependencies.
@@ -36,14 +36,14 @@
     - [ ] Seite erläutert Funktionsweise Queue
 - [ ] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
     - [ ] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
-- [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
-    - [ ] Übertragung Information aus Labreport Template.
-    - [ ] Alle Schritte dieser Übung nachvollziehbar erläutern.
+- [x] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
+    - [x] Übertragung Information aus Labreport Template.
+    - [x] Alle Schritte dieser Übung nachvollziehbar erläutern.
     - [ ] Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3 Zeilen Python und 3 Zeilen Java Source Code korrekt darstellt.
-    - [ ] Korrekturlesen Dokumentation
-    - [ ]  PDF erstellen (zB Dillinger)
+    - [x] Korrekturlesen Dokumentation
+    - [x]  PDF erstellen (zB Dillinger)
 - [ ] Überprüfung Vollständigkeit der Abgabe
-- [ ] Abgabe PDF Version der Abgabe
+- [x] Abgabe PDF Version der Abgabe
 ---
 ---
 ## Report
@@ -56,15 +56,58 @@
     Die Queue Vorlage aus dem vorgegebenen Repository wurde eingebettet und gleichzeitig wurde ein .gitignore file erstellt.
 
 3. #### Fehler finden!
-    Es wurden 3 Fehler gefunden. Bilder fehlen.!!!!!!
+    Es wurden 3 Fehler in der Klasse StringQueue.java gefunden. 
+    
+    #####1. Fehler: Schreibfehler in "MaxSize" und die Zuweisung mit "this." fehlte.
+    ![Screenshot from logged methods](media/err_1.jpg) 
+    
+    #####2. Fehler: Wenn elements.size() == 0 ist, soll ein Element gelöscht werden, doch wenn size() 0 ist, dann ist elements leer => elements.size() > 0.
+    ![Screenshot from logged methods](media/err_2.jpg) 
+    
+    #####3. Fehler: element wird ein leerer String zugewiesen => element = poll().
+    ![Screenshot from logged methods](media/err_3.jpg)
 
 4. #### Testing
-    Um gut zu testen wurde ein setUp erstellt. Dannach wurden insgesamt 8 Testmethoden geschrieben um eine line coverage von 100% zu erreichen.
-    Alle Methoden wurden mit JavaDoc Kommentare versehen um die Dokumentation durchführen zu können. Bild fehlt!!!!!!!!
+    Um gut zu testen wurde ein setUp erstellt. Dannach wurden insgesamt acht Testmethoden geschrieben um eine line coverage von 100% zu erreichen.
+    Alle Methoden wurden mit JavaDoc Kommentare versehen um die Dokumentation durchführen zu können. 
+    
+    StringQueueTest.java run with Coverage:
+    ![Screenshot from logged methods](media/test_1.jpg)
+    
+    JavaDoc Kommentare:
+    ![Screenshot from logged methods](media/doc_screen7.jpg)
+     
+    ![Screenshot from logged methods](media/doc_screen1.jpg)
+     
+    ![Screenshot from logged methods](media/doc_screen2.jpg) 
+    
+    ![Screenshot from logged methods](media/doc_screen3.jpg)
+     
+    ![Screenshot from logged methods](media/doc_screen4.jpg) 
+    
+    ![Screenshot from logged methods](media/doc_screen5.jpg) 
+    
+    ![Screenshot from logged methods](media/doc_screen6.jpg)
 
 5. #### POM.XML
-    Um einen Log auszugeben wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen wurde eine Main erstellt und diverse Methoden aufgerufen. ![Screenshot from logged methods](media/log.png)
+    Um einen Log auszugeben, wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen, wurde eine Main Methode erstellt und diverse Methoden aufgerufen. 
+    
+    ![Screenshot from logged methods](media/log.png)
 
 5. #### Maven Site
     Damit man Maven Sites erstellen kann, wird der site-Ordner im src-Ordner angelegt. Darin wurde das site.xml erstellt.
+    
+    
+#### Links:
+- https://blog.akquinet.de/2012/04/12/maven-sites-reloaded/
+- http://maven.apache.org/plugins/maven-site-plugin/
+- https://maven.apache.org/xsd/maven-4.0.0.xsd
+- https://www.javatpoint.com/maven-pom-xml
+
+
+#####Studenten:
+
+- Christian Vo
+- Lisa Zirkl
+    
 

@@ -29,6 +29,7 @@ public class StringQueue implements Queue {
 	 * @param maxSize
 	 */
 	public StringQueue(int maxSize){
+
 		this.maxSize = maxSize;
 	}
 
@@ -84,9 +85,8 @@ public class StringQueue implements Queue {
 		if(element == null) {
 			logger.info("no element anymore");
 			throw new NoSuchElementException("there's no element any more");
-
 		}
-		
+
 		return element;
 	}
 
