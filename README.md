@@ -56,48 +56,48 @@
     Die Queue Vorlage aus dem vorgegebenen Repository wurde eingebettet und gleichzeitig wurde ein .gitignore file erstellt.
 
 3. #### Fehler finden!
-    Es wurden 3 Fehler in der Klasse StringQueue.java gefunden. 
-    
+    Es wurden 3 Fehler in der Klasse StringQueue.java gefunden.
+
     1. Fehler 1: Schreibfehler in "MaxSize" und die Zuweisung mit "this." fehlte.
-    ![Screenshot from first error](./media/err_1.PNG) 
-    
+    ![Screenshot from first error](./media/err_1.PNG)
+
     2. Fehler 2: Wenn elements.size() == 0 ist, soll ein Element gelöscht werden, doch wenn size() 0 ist, dann ist elements leer => elements.size() > 0.
-    ![Screenshot from second error](./media/err_2.PNG) 
-    
+    ![Screenshot from second error](./media/err_2.PNG)
+
     3. Fehler 3: element wird ein leerer String zugewiesen => element = poll().
     ![Screenshot from third error](./media/err_3.PNG)
 
 4. #### Testing
     Um gut zu testen wurde ein setUp erstellt. Dannach wurden insgesamt acht Testmethoden geschrieben um eine line coverage von 100% zu erreichen.
-    Alle Methoden wurden mit JavaDoc Kommentare versehen um die Dokumentation durchführen zu können. 
-    
+    Alle Methoden wurden mit JavaDoc Kommentare versehen um die Dokumentation durchführen zu können.
+
     StringQueueTest.java run with Coverage:
     ![Screenshot from testing methods](./media/test_1.PNG)
-    
+
     JavaDoc Kommentare:
     ![Screenshot from JavaDoc1](./media/doc_screen7.PNG)
-     
+
     ![Screenshot from JavaDoc2](./media/doc_screen1.PNG)
-     
-    ![Screenshot from JavaDoc3](./media/doc_screen2.PNG) 
-    
+
+    ![Screenshot from JavaDoc3](./media/doc_screen2.PNG)
+
     ![Screenshot from JavaDoc4](./media/doc_screen3.PNG)
-     
-    ![Screenshot from JavaDoc5](./media/doc_screen4.PNG) 
-    
-    ![Screenshot from JavaDoc6](./media/doc_screen5.PNG) 
-    
+
+    ![Screenshot from JavaDoc5](./media/doc_screen4.PNG)
+
+    ![Screenshot from JavaDoc6](./media/doc_screen5.PNG)
+
     ![Screenshot from JavaDoc7](./media/doc_screen6.PNG)
 
 5. #### POM.XML
-    Um einen Log auszugeben, wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen, wurde eine Main Methode erstellt und diverse Methoden aufgerufen. 
-    
+    Um einen Log auszugeben, wurde log4j mittels Maven dependencies integriert. Danach wurde ein statischer Logger ertellt und in jeder Methode implementiert. Um diesen Logger zu testen, wurde eine Main Methode erstellt und diverse Methoden aufgerufen.
+
     ![Screenshot from logged methods](media/log.png)
 
 5. #### Maven Site
     Damit man Maven Sites erstellen kann, wird der site-Ordner im src-Ordner angelegt. Darin wurde das site.xml erstellt.
-    
-    
+
+
 #### Links:
 - https://blog.akquinet.de/2012/04/12/maven-sites-reloaded/
 - http://maven.apache.org/plugins/maven-site-plugin/
@@ -109,5 +109,6 @@ Studenten:
 
 - Christian Vo
 - Lisa Zirkl
-    
 
+  Github:
+- https://github.com/lisazirkl/19-Abgabe04-Vo-Zirkl
